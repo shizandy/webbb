@@ -1,0 +1,131 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Create Admin
+  </title>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f7fafc;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            position: relative;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .qr-code {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .qr-code img {
+            max-width: 200px;
+            margin: 10px 0;
+            border: 5px solid aqua;
+            border-radius: 10px;
+        }
+        .status {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+        .hidden {
+            display: none;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container" id="formSection">
+   <h1>
+    Create Admin
+   </h1>
+   <div class="form-group">
+    <label for="username">
+     Username:
+    </label>
+    <input id="username" placeholder="Enter username" type="text"/>
+   </div>
+   <div class="form-group">
+    <label for="email">
+     Email:
+    </label>
+    <input id="email" placeholder="Email Pnerima Data" type="email"/>
+   </div>
+   <button id="createAdminBtn">
+    Create Admin
+   </button>
+  </div>
+  <div class="container hidden" id="qrCodeSection">
+   <h3 class="text-xl font-bold mb-2 text-center">
+    Scan QR Untuk Melanjutkan
+   </h3>
+   <p class="mb-4 text-center">
+    QR ini digunakan untuk pembayaran admin panel. Silakan scan untuk melanjutkan proses.
+   </p>
+   <div class="qr-code">
+    <img alt="QR Code for payment" height="200" id="qrCodeImage" src="https://storage.googleapis.com/a1aa/image/Xfd7VPVLeYuaiNlCS0iMfYvOldoLOFaoZ7niyObASTs.jpg" width="200"/>
+   </div>
+   <div class="status" id="statusMessage">
+   </div>
+   <div class="footer">
+    Scan QR Untuk melanjutkan pembelian Admin Panel
+    <br/>
+    Jika Memiliki Kendala Hubungi
+    <a href="#">
+     Owner!
+    </a>
+   </div>
+  </div>
+  <script src="/style/adp.js"></script>
+ </body>
+</html>
