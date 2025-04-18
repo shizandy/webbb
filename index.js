@@ -156,8 +156,8 @@ app.get('/cekstatus', async (req, res) => {
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'rerezzofficial@gmail.com',
-        pass: 'epee rzwy symm aglf'
+        user: 'emprerorsukuna@gmail.com',
+        pass: 'enmf kjeg lhke jiur'
     }
 });
 
