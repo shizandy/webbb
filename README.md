@@ -1,1 +1,1 @@
-# juall? kontol lu gw jual
+# fuck them I'm mrlit Andy
